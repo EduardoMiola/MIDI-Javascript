@@ -2,7 +2,7 @@ function tocaSom(idElementoAudio) {
     const elemento = document.querySelector(idElementoAudio);
 
     if(elemento && elemento.localName === "audio") {
-        elemento.play();
+        elemento.autoplay();
     }
     else{
         console.log("Elemento não encontrado");
